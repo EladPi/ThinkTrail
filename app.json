@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "MindBrew",
+    "slug": "mind-brew",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/Assets/appicon/appicon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eladev.mindbrew",
+      "splash": {
+        "backgroundColor": "#3ea4f7"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a69d218b-2dd7-4eae-889d-d1912b0e3360"
+      }
+    }
+  }
+}

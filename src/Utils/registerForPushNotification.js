@@ -5,8 +5,6 @@ import * as Notifications from 'expo-notifications';
 
 export async function registerForPushNotificationsAsync() {
   let token;
-  console.log('register for push token start from app.')
-
   if (Device.isDevice) {
     const { status: existingStatus } = await Notifications.getPermissionsAsync();
     let finalStatus = existingStatus;
@@ -32,7 +30,7 @@ export async function registerForPushNotificationsAsync() {
 
 async function sendTokenToServer(token) {
   try {
-    const response = await fetch('https://us-central1-factsapp-cbc6a.cloudfunctions.net/registerPushToken', {
+    const response = await fetch('https://europe-west1-factsapp-cbc6a.cloudfunctions.net/registerPushToken', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

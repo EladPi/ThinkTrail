@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet} from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './src/Redux/store';
 import { RootStackNavigator } from './src/Navigation/AppNavigator';

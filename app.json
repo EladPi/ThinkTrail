@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MindBrew",
-    "slug": "mind-brew",
+    "name": "ThinkTrail",
+    "slug": "think-trail",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/Assets/appicon/appicon.png",
@@ -14,7 +14,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.eladev.mindbrew",
+      "bundleIdentifier": "com.eladev.thinktrail",
       "splash": {
         "backgroundColor": "#3ea4f7"
       }

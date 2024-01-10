@@ -5,14 +5,14 @@ const SettingsLicenseScreen = ({ navigation }) => {
             <ScrollView style={styles.subContainer} contentContainerStyle={{ paddingBottom:30}}>
                 <Text style={[styles.title, {marginBottom:20}]}>Last Updated: 7/1/2024</Text>
 
-                <Text>Welcome to MindBrew! These terms and conditions outline the rules and regulations for the use of the App, MindBrew.</Text>
+                <Text>Welcome to ThinkTrail! These terms and conditions outline the rules and regulations for the use of the App, ThinkTrail.</Text>
 
                 <Text>
-                    By accessing and using MindBrew, you accept and agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access or use the App.
+                    By accessing and using ThinkTrail, you accept and agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access or use the App.
                 </Text>
 
                 <Text style={styles.title}>Definitions:</Text>
-                <Text>"App" refers to the MindBrew application.</Text>
+                <Text>"App" refers to the ThinkTrail application.</Text>
                 <Text>"User," "You," and "Your" refers to you, the person using this App.</Text>
                 <Text>"We," "Us," "Me", and "Our" refers to Elad.</Text>
 
@@ -46,7 +46,7 @@ const SettingsLicenseScreen = ({ navigation }) => {
                 If you have any questions about these Terms, please contact us at
                 </Text>
                 <TouchableOpacity style={styles.touchable}>
-                    <Text style={styles.link}>mindbrew.app@gmail.com</Text>
+                    <Text style={styles.link}>thinktrail.app@gmail.com</Text>
                 </TouchableOpacity>
             </ScrollView>
         </SafeAreaView>

@@ -3,6 +3,7 @@ const BASE_URL = 'https://api.fungenerators.com';
 const apiKey = process.env.EXPO_PUBLIC_API_KEY;
 
 export async function fetchRandomFacts() {
+  console.log('APIKEY:',apiKey)
   try {
     const response = await fetch(`${BASE_URL}/fact/random`, {
       headers: { 'X-Fungenerators-Api-Secret': apiKey }

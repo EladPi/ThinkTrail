@@ -41,7 +41,6 @@ const FactContainer = () => {
             if (result.contents) {
                 dispatch(addFact(result.contents));
                 dispatch(addFact(resultTwo.contents));
-
             } else {
                 console.log("No result returned from the API");
             }
@@ -98,7 +97,7 @@ const FactContainer = () => {
         const restart = async () => {
             dispatch(clearFacts());
             setLastFetchScrollPosition(0);
-            await newFactGenerator();
+            await initialFactGenerator();
         }
         restart();
     }, [selectedCategory])
@@ -131,9 +130,6 @@ const FactContainer = () => {
         if (scrolledDistance >= 300) {
             await newFactGenerator(); // Load new fact
             setLastFetchScrollPosition(currentOffsetY); // Update last fetch position
-            console.log('Scrolled:', currentOffsetY);
-        } else {
-            console.log('Didnt scroll enough:', currentOffsetY);
         }
     };
 

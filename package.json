@@ -1,5 +1,5 @@
 {
-  "name": "facts-app",
+  "name": "thinktrail",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {

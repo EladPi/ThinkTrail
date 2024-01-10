@@ -3,16 +3,16 @@ const SettingsAboutScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.subContainer} contentContainerStyle={{justifyContent:'space-evenly',paddingBottom:30}}>
-                <Text style={styles.title}>Welcome to MindBrew!</Text>
+                <Text style={styles.title}>Welcome to ThinkTrail!</Text>
                 <Text>
-                    MindBrew is your pocket-sized partner in the endless quest for knowledge.
+                    ThinkTrail is your pocket-sized partner in the endless quest for knowledge.
                     Dive into a sea of interesting facts and let us quench your curiosity, one fact at a time.
-                    Here's what makes MindBrew special:
+                    Here's what makes ThinkTrail special:
                 </Text>
 
                 <Text style={styles.subtitle}>Explore Facts:</Text>
                 <Text>
-                    At the heart of MindBrew is the 'Facts' tab, your gateway to discovering random tidbits from across the globe.
+                    At the heart of ThinkTrail is the 'Facts' tab, your gateway to discovering random tidbits from across the globe.
                     Each swipe brings you a new fact, a new story, and perhaps a new perspective.
                 </Text>
 
@@ -20,7 +20,7 @@ const SettingsAboutScreen = ({ navigation }) => {
                 <Text>
                     With the 'Categories' tab, you have the power to tailor your learning journey.
                     Choose from a variety of intriguing categories and receive facts that pique your particular interests.
-                    Whether it's science, history, or the animal kingdom that captivates you, MindBrew has something for everyone.
+                    Whether it's science, history, or the animal kingdom that captivates you, ThinkTrail has something for everyone.
                 </Text>
 
                 <Text style={styles.subtitle}>Save What Fascinates You:</Text>
@@ -33,16 +33,16 @@ const SettingsAboutScreen = ({ navigation }) => {
                 <Text>
                     Enable push notifications and receive a sprinkle of knowledge throughout your day.
                     With 3-5 notifications between 9 AM and 9 PM,
-                    MindBrew ensures your daily dose of facts is both delightful and non-intrusive.
+                    ThinkTrail ensures your daily dose of facts is both delightful and non-intrusive.
                 </Text>
 
                 <Text>
-                    MindBrew is more than just an app; it's a commitment to continuous learning and wonderment.
+                    ThinkTrail is more than just an app; it's a commitment to continuous learning and wonderment.
                     Our mission is to ignite curiosity, inspire learning, and make every moment an opportunity to learn something new.
                 </Text>
 
                 <Text style={[styles.subtitle, {marginBottom:15}]}>
-                    Join us on this journey of discovery. Unleash the power of knowledge with MindBrew.
+                    Join us on this journey of discovery. Unleash the power of knowledge with ThinkTrail.
                 </Text>
 
                 <Text>

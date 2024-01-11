@@ -1,6 +1,6 @@
 
 const BASE_URL = 'https://api.fungenerators.com';
-const apiKey = process.env.EXPO_PUBLIC_API_KEY;
+const apiKey = 'GuLirjdkOJ2KvDLZLglUnAeF';
 
 export async function fetchRandomFacts() {
   try {

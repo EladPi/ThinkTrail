@@ -2,10 +2,11 @@
   "expo": {
     "name": "ThinkTrail",
     "slug": "thinktrail",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./src/Assets/appicon/newappicon.png",
     "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
     "splash": {
       
     },
@@ -15,7 +16,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.eladev.thinktrail",
-      "buildNumber":"1.0.3",
+      "buildNumber":"1.0.5",
+      "jsEngine": "jsc",
       "splash": {
         "backgroundColor": "#54A2D3",
         "image": "./src/Assets/appicon/splashscreen.png",

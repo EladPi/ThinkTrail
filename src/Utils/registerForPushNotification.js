@@ -17,7 +17,7 @@ export async function registerForPushNotificationsAsync() {
       return;
     }
     token = await Notifications.getExpoPushTokenAsync({
-      projectId: Constants.expoConfig.extra.eas.projectId,
+      projectId: Device.modelName.expoConfig.extra.eas.projectId,
     });
   } else {
     alert('Must use physical device for Push Notifications');
@@ -44,3 +44,12 @@ async function sendTokenToServer(token) {
     console.error('Error on sendTokenToServer:', error);
   }
 }
+
+
+
+
+
+/*
+      projectId: Constants.expoConfig.extra.eas.projectId,
+
+*/

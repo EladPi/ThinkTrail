@@ -24,6 +24,7 @@ const FactContainer = () => {
         let resultTwo;
         try {
             if (selectedCategory) {
+                console.log("selectedCategory:", selectedCategory)
                 if (selectedCategory == 'Today In History') {
                     result = await fetchTodayInHistory();
                     resultTwo = await fetchTodayInHistory();

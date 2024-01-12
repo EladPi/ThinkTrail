@@ -29,3 +29,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+
+/*
+<Provider store={store}>
+      <NavigationContainer>
+        <RootStackNavigator />
+      </NavigationContainer>
+    </Provider>
+*/

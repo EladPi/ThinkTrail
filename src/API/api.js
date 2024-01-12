@@ -11,8 +11,10 @@ export async function fetchRandomFacts() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
+    console.log('******data from fetchRandomFacts:',data)
     return data;
   } catch (error) {
+    console.log("ERRORRRRRR")
     console.error("Failed to fetch facts:", error);
   }
 }
@@ -27,8 +29,12 @@ export async function fetchFactsByCategory(category) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
+    console.log('******selectedCategory from fetchFactsByCategory:', fixedCategory)
+    console.log('******data from fetchFactsByCategory:', data)
     return data;
   } catch (error) {
+    console.log("ERRORRRRRR")
+
     console.error("Failed to fetch facts:", error);
   }
 }

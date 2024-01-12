@@ -57,6 +57,7 @@ const FactContainer = () => {
     }, [])
 
     const newFactGenerator = async () => {
+        console.log('newFactGenerator activated.')
         setIsConnected(true);
         let result;
         try {
@@ -73,6 +74,7 @@ const FactContainer = () => {
             }
 
             if (result.contents) {
+                console.log('result content:',result.contents)
                 dispatch(addFact(result.contents));
             } else {
                 console.log("No result returned from the API");
@@ -82,7 +84,7 @@ const FactContainer = () => {
             console.error("Error fetching a random fact2 :", error);
         }
     }
-    /*
+    
     useEffect(() => {
         console.log('allFacts:', facts);
         console.log('isloading:', isLoading)
@@ -92,7 +94,6 @@ const FactContainer = () => {
     useEffect(() => {
         console.log('selectedCategory:', selectedCategory)
     }, [selectedCategory])
-*/
 
     useEffect(() => {
         const restart = async () => {

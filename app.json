@@ -2,13 +2,15 @@
   "expo": {
     "name": "ThinkTrail",
     "slug": "thinktrail",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "orientation": "portrait",
     "icon": "./src/Assets/appicon/newappicon.png",
     "userInterfaceStyle": "light",
     "jsEngine": "hermes",
     "splash": {
-      
+      "backgroundColor": "#2B8EDC",
+      "image": "./src/Assets/appicon/splashscreen.png",
+      "resizeMode": "contain"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -16,13 +18,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.eladev.thinktrail",
-      "buildNumber":"1.0.6",
-      "jsEngine": "jsc",
-      "splash": {
-        "backgroundColor": "#2B8EDC",
-        "image": "./src/Assets/appicon/splashscreen.png",
-        "resizeMode":"contain"
-      }
+      "buildNumber": "1.0.8",
+      "splash": {}
     },
     "android": {
       "adaptiveIcon": {

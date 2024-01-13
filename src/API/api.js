@@ -8,7 +8,8 @@ export async function fetchRandomFacts() {
       headers: { 'X-Fungenerators-Api-Secret': apiKey }
     });
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      //throw new Error(`HTTP error! status: ${response.status}`);
+      return;
     }
     const data = await response.json();
     console.log('******data from fetchRandomFacts:',data)
@@ -26,7 +27,8 @@ export async function fetchFactsByCategory(category) {
       headers: { 'X-Fungenerators-Api-Secret': apiKey }
     });
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      //throw new Error(`HTTP error! status: ${response.status}`);
+      return;
     }
     const data = await response.json();
     console.log('******selectedCategory from fetchFactsByCategory:', fixedCategory)
@@ -46,7 +48,8 @@ export async function fetchTodayInHistory() {
       headers: { 'X-Fungenerators-Api-Secret': apiKey }
     });
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      //throw new Error(`HTTP error! status: ${response.status}`);
+      return;
     }
     const data = await response.json();
     return data;

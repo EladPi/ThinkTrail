@@ -2,7 +2,7 @@
   "expo": {
     "name": "ThinkTrail",
     "slug": "thinktrail",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "orientation": "portrait",
     "icon": "./src/Assets/appicon/newappicon.png",
     "userInterfaceStyle": "light",
@@ -18,7 +18,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.eladev.thinktrail",
-      "buildNumber": "1.0.8",
+      "buildNumber": "1.0.9",
       "splash": {}
     },
     "android": {
@@ -34,6 +34,26 @@
       "eas": {
         "projectId": "f029e55a-a203-4068-b610-73c379e6291e"
       }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "thinktrail",
+            "project": "ThinkTrail"
+          }
+        }
+      ]
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f029e55a-a203-4068-b610-73c379e6291e"
     }
   }
 }

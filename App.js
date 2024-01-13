@@ -5,6 +5,15 @@ import { RootStackNavigator } from './src/Navigation/AppNavigator';
 import { NavigationContainer } from '@react-navigation/native';
 import { registerForPushNotificationsAsync } from './src/Utils/registerForPushNotification';
 import { useEffect } from 'react';
+import * as Sentry from 'sentry-expo';
+ 
+Sentry.init({
+  dsn: 'https://bddb49fe2f2ec0aef8d3a6ccadcd841a@o4506565115445248.ingest.sentry.io/4506565119246336',
+  enableInExpoDevelopment: false,
+  debug: true, // Consider setting this to false in production
+});
+
+
 
 export default function App() {
 

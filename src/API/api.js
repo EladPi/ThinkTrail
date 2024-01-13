@@ -57,5 +57,3 @@ export async function fetchTodayInHistory() {
     console.error("Failed to fetch facts:", error);
   }
 }
-
-
